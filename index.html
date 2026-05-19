@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles/main.css" />
@@ -19,6 +19,7 @@
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="IRSES 2027 home">
+        <img class="brand-logo" src="./assets/dau-logo.jpg" alt="Dhirubhai Ambani University" />
         <span>
           <strong>IRSES 2027</strong>
         </span>
@@ -35,7 +36,7 @@
         <a href="#dates">Dates</a>
         <a href="#tracks">Tracks</a>
         <a href="#committees">Committees</a>
-        <a href="#registration">Registration</a>
+        <a class="nav-cta" href="#registration">Register</a>
         <a href="#venue">Venue</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -46,14 +47,16 @@
         <div class="hero-media" aria-hidden="true"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow" data-event-label></p>
+          <p class="eyebrow hero-eyebrow" data-event-label></p>
           <h1 id="hero-title" data-event-title></h1>
           <p class="hero-theme" data-event-theme></p>
           <div class="hero-actions">
-            <a class="button primary" href="#dates">Important Dates</a>
+            <a class="button primary" href="#registration">Register Interest</a>
+            <a class="button secondary" href="#tracks">Explore Tracks</a>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Conference snapshot">
+          <p class="panel-label">Conference Snapshot</p>
           <dl>
             <div>
               <dt>Dates</dt>
@@ -71,7 +74,11 @@
         </aside>
       </section>
 
-      <section class="section intro-section" id="about">
+      <section class="logo-strip reveal" aria-label="Organizers and partners">
+        <div class="logo-strip-inner" data-logos></div>
+      </section>
+
+      <section class="section intro-section reveal" id="about">
         <div class="section-heading">
           <p class="eyebrow">About</p>
           <h2>Conference Overview</h2>
@@ -83,14 +90,14 @@
           </article>
           <div class="quick-links" aria-label="Conference actions">
             <a href="#tracks">Call for Papers</a>
-            <a href="#registration">Registration</a>
+            <a class="nav-cta" href="#registration">Register</a>
             <a href="#committees">Committees</a>
             <a href="#contact">Contact Secretariat</a>
           </div>
         </div>
       </section>
 
-      <section class="section muted" id="dates">
+      <section class="section muted reveal" id="dates">
         <div class="section-heading">
           <p class="eyebrow">Timeline</p>
           <h2>Important Dates</h2>
@@ -98,7 +105,7 @@
         <div class="date-grid" data-important-dates></div>
       </section>
 
-      <section class="section" id="tracks">
+      <section class="section reveal" id="tracks">
         <div class="section-heading wide">
           <div>
             <p class="eyebrow">Call For Papers</p>
@@ -108,7 +115,7 @@
         <div class="track-grid" data-tracks></div>
       </section>
 
-      <section class="section split-section" id="committees">
+      <section class="section split-section reveal" id="committees">
         <div class="section-heading">
           <p class="eyebrow">People</p>
           <h2>Committees</h2>
@@ -116,7 +123,7 @@
         <div class="committee-layout" data-committees></div>
       </section>
 
-      <section class="section muted" id="registration">
+      <section class="section muted registration-section reveal" id="registration">
         <div class="section-heading wide">
           <div>
             <p class="eyebrow">Participation</p>
@@ -128,17 +135,32 @@
           <table>
             <thead>
               <tr>
+                <th>Group</th>
                 <th>Category</th>
-                <th>Early Bird</th>
-                <th>Regular</th>
+                <th>Early Bird Registration</th>
+                <th>Late Registration</th>
               </tr>
             </thead>
             <tbody data-registration-fees></tbody>
           </table>
         </div>
+        <div class="registration-guidelines">
+          <article>
+            <h3>For Authors</h3>
+            <ol data-author-notes></ol>
+          </article>
+          <article>
+            <h3>For Attendees</h3>
+            <ol data-attendee-notes></ol>
+          </article>
+          <article class="no-show-policy">
+            <h3>No-Show Policy</h3>
+            <p data-no-show-policy></p>
+          </article>
+        </div>
       </section>
 
-      <section class="section venue-section" id="venue">
+      <section class="section venue-section reveal" id="venue">
         <div class="venue-copy">
           <p class="eyebrow">Venue</p>
           <h2 data-venue-title></h2>
@@ -147,7 +169,7 @@
         <img src="./assets/daiict-entrance.png" alt="DAU campus entrance" />
       </section>
 
-      <section class="section contact-section" id="contact">
+      <section class="section contact-section reveal" id="contact">
         <div class="section-heading">
           <p class="eyebrow">Contact</p>
           <h2>Conference Secretariat</h2>

@@ -1,110 +1,246 @@
 export const conference = {
   shortName: "IRSES 2027",
-  title: "International Research Symposium on Emerging Systems 2027",
+  title: "International Conference on Intelligent, Resilient, and Sustainable Energy Systems (IRSES 2027)",
   label: "IRSES 2027",
-  theme: "Emerging technologies, resilient systems, and intelligent innovation",
-  dates: "Dates to be announced",
+  heroTitleLines: ["Intelligent, Resilient,", "and Sustainable", "Energy Systems"],
+  theme: "A global forum for research shaping smarter, cleaner, and more resilient energy futures.",
+  dates: "19-21 February 2027",
   venue: "Dhirubhai Ambani University, Gandhinagar, formerly known as DAIICT",
   host: "DAU",
   description:
-    "IRSES 2027 is a placeholder conference website prepared for the planning phase. It is designed for an academic audience and can support paper submissions, technical tracks, committees, speakers, registration, venue details, and sponsor information.",
+    "IRSES 2027 brings together researchers, academicians, industry professionals, and students working on intelligent, resilient, and sustainable energy systems.",
   purpose:
-    "Once the professor shares the final brochure, committee list, deadlines, and submission instructions, this starter site can be updated without changing the page structure.",
+    "The conference will provide a focused platform for sharing research in AI-driven energy systems, cyber-physical energy infrastructure, resilient grids, sustainable energy technologies, and efficient hardware for edge AI systems.",
   footer: "Copyright 2027 IRSES. All rights reserved.",
+  logos: [
+    {
+      name: "Dhirubhai Ambani University",
+      src: "./assets/dau-logo.jpg",
+    },
+    {
+      name: "IEEE Gujarat Section",
+      src: "./assets/ieee-gujarat-section.png",
+    },
+    {
+      name: "Smart Energy Learning Center",
+      src: "./assets/smart-energy-learning-center.jpg",
+    },
+  ],
   importantDates: [
     {
       label: "Paper submission opens",
-      date: "To be announced",
-      note: "Add the CMT, EasyChair, EDAS, or official submission link later.",
+      date: "1 June 2026",
+      note: "Submission portal details will be announced soon.",
     },
     {
-      label: "Full paper submission deadline",
-      date: "To be announced",
-      note: "Replace this with the final deadline from the call for papers.",
+      label: "Paper submission deadline",
+      date: "15 August 2026",
+      note: "Authors should submit full papers before the deadline.",
     },
     {
       label: "Acceptance notification",
-      date: "To be announced",
-      note: "Useful for authors planning camera-ready papers and travel.",
+      date: "1 November 2026",
+      note: "Accepted papers will proceed to final submission and registration.",
     },
     {
-      label: "Early bird registration",
-      date: "To be announced",
-      note: "Add registration portal and fee details when approved.",
+      label: "Final paper submission",
+      date: "1 December 2026",
+      note: "Camera-ready paper and author registration details will be required.",
     },
     {
       label: "Conference dates",
-      date: "To be announced",
-      note: "Final dates will appear in the hero and timeline together.",
+      date: "19-21 February 2027",
+      note: "IRSES 2027 will be hosted at DAU, Gandhinagar.",
     },
   ],
   tracks: [
-    "Artificial Intelligence and Machine Learning",
-    "Communication Networks and Signal Processing",
-    "Cyber-Physical Systems and IoT",
-    "Data Science, Computing, and Analytics",
-    "Sustainable Energy and Smart Infrastructure",
-    "Security, Privacy, and Trustworthy Systems",
+    {
+      title: "AI and Data-Driven Energy Systems",
+      scope: [
+        "Machine learning for energy forecasting, optimization, and control",
+        "Foundation models and multimodal learning for energy data",
+        "Explainable and trustworthy AI in energy systems",
+        "AI for energy systems",
+        "Causal inference and uncertainty quantification",
+      ],
+    },
+    {
+      title: "Cyber-Physical and IoT-Enabled Energy Infrastructure",
+      scope: [
+        "Smart grids and cyber-physical energy systems",
+        "IoT architectures for sensing, monitoring, and control",
+        "Edge computing and real-time energy analytics",
+        "Digital twins for energy systems",
+        "Security and privacy in energy infrastructure",
+      ],
+    },
+    {
+      title: "Resilient, Decentralized, and Market-Driven Energy Systems",
+      scope: [
+        "Grid resilience under climate and extreme events",
+        "Distributed energy resources (DERs) and microgrids",
+        "Demand response and transactive energy systems",
+        "Energy markets, pricing, and game-theoretic models",
+        "Policy-aware and regulation-driven system design",
+      ],
+    },
+    {
+      title: "Sustainable Energy Technologies and Circular Systems",
+      scope: [
+        "Renewable energy systems including solar, wind, hydrogen, and hybrid systems",
+        "Energy storage technologies and optimization",
+        "Waste-to-energy and circular energy systems",
+        "Lifecycle analysis and carbon-aware design",
+        "Integrated energy systems across electric, thermal, and hydrogen domains",
+        "2D materials for photovoltaic applications",
+        "AI for climate control",
+        "RF energy harvesting",
+        "Low-power rectennas",
+      ],
+    },
+    {
+      title: "Energy Efficient and Secure Hardware Architecture for Edge AI Systems",
+      scope: [
+        "Quantum-inspired and next-generation hardware",
+        "In-memory computing for AI",
+        "Real-time edge intelligence systems",
+        "Secure hardware design for AI systems",
+        "GPU/NPU optimization for edge inference",
+        "Low-power VLSI architectures for AI acceleration",
+        "Energy-aware processor design for edge devices",
+        "Neuromorphic and bio-inspired architectures",
+        "FPGA-based AI accelerators for edge computing",
+      ],
+    },
   ],
   committees: [
     {
-      title: "Patrons",
-      members: ["Prof. Name Placeholder", "Director / Dean Placeholder"],
+      title: "Chief Patron",
+      members: [
+        { name: "Prof. Tathagata Bandyopadhyay", image: "./assets/faculty/tathagata-bandyopadhyay.jpg" },
+      ],
+    },
+    {
+      title: "Patron",
+      members: [
+        { name: "Prof. G. Venkatesh", image: "./assets/faculty/g-venkatesh.jpg" },
+      ],
+    },
+    {
+      title: "Oversight Committee",
+      members: [
+        { name: "Prof. Bhaskar Chaudhary", image: "./assets/faculty/bhaskar-chaudhary.jpg" },
+        { name: "Prof. Yash Vasawada", image: "./assets/faculty/yash-vasawada.jpg" },
+      ],
     },
     {
       title: "General Chairs",
-      members: ["Prof. Name Placeholder", "Prof. Name Placeholder"],
+      members: [
+        { name: "Prof. Pankaj Kumar", image: "./assets/faculty/pankaj-kumar.jpg" },
+        { name: "Prof. Yash Agarwal", image: "./assets/faculty/yash-agarwal.jpg" },
+      ],
     },
     {
-      title: "Technical Program Chairs",
-      members: ["Faculty Member Placeholder", "Faculty Member Placeholder"],
+      title: "TPC Chairs",
+      members: [
+        { name: "Prof. Sanjay Srivastava", image: "./assets/faculty/sanjay-srivastava.jpg" },
+        { name: "Prof. Anish Mathuria", image: "./assets/faculty/anish-mathuria.jpg" },
+        { name: "Prof. Biswajit Mishra", image: "./assets/faculty/biswajit-mishra.jpg" },
+      ],
     },
     {
-      title: "Organizing Secretaries",
-      members: ["Coordinator Placeholder", "Student Coordinator Placeholder"],
+      title: "Publication Chair",
+      members: [
+        { name: "Prof. Manish Kumar", image: "./assets/faculty/manish-kumar.jpg" },
+        { name: "Prof. Pritam Anand", image: "./assets/faculty/pritam-anand.jpg" },
+        { name: "Prof. Arpit Rana", image: "./assets/faculty/arpit-rana.jpg" },
+      ],
+    },
+    {
+      title: "Finance Chair",
+      members: [
+        { name: "Prof. Mukesh Tiwari", image: "./assets/faculty/mukesh-tiwari.jpg" },
+      ],
+    },
+    {
+      title: "Website and Social Media Chair",
+      members: [
+        { name: "Prof. Sujay Kadam", image: "./assets/faculty/sujay-kadam.jpg" },
+        { name: "Prof. Anupam Rana", image: "./assets/faculty/anupam-rana.jpg" },
+      ],
+    },
+    {
+      title: "PhD Colloquium Chair",
+      members: [
+        { name: "Prof. Sangeeta Singh" },
+        { name: "Prof. Rutu Parekh", image: "./assets/faculty/rutu-parekh.jpg" },
+      ],
+    },
+    {
+      title: "Student Innovation Chair",
+      members: [
+        { name: "Prof. Koushlendra Singh" },
+      ],
+    },
+    {
+      title: "Industry Track Chair",
+      members: [
+        { name: "Dr. Prasenjit Kundu", image: "./assets/faculty/prasenjit-kundu.jpg" },
+        { name: "Prof. Ankit Vijayvargiya", image: "./assets/faculty/ankit-vijayvargiya.jpg" },
+        { name: "Prof. Madhukant Sharma", image: "./assets/faculty/madhukant-sharma.jpg" },
+      ],
+    },
+    {
+      title: "International Liaison Chairs",
+      members: [
+        { name: "Prof. Abhishek Jindal", image: "./assets/faculty/abhishek-jindal.jpg" },
+        { name: "Prof. Ajay Beniwal", image: "./assets/faculty/ajay-beniwal.jpg" },
+      ],
     },
   ],
-  registrationNote:
-    "Fee categories and payment instructions are placeholders until approved by the organizing committee.",
+  registrationNote: "",
   registrationFees: [
-    {
-      category: "IEEE student member",
-      early: "TBA",
-      regular: "TBA",
-    },
-    {
-      category: "Student / research scholar",
-      early: "TBA",
-      regular: "TBA",
-    },
-    {
-      category: "Faculty / academician",
-      early: "TBA",
-      regular: "TBA",
-    },
-    {
-      category: "Industry participant",
-      early: "TBA",
-      regular: "TBA",
-    },
+    { group: "IEEE Member", category: "Indian participant - IEEE student member", earlyBird: "TBA", late: "TBA" },
+    { group: "IEEE Member", category: "Indian participant - IEEE member", earlyBird: "TBA", late: "TBA" },
+    { group: "IEEE Member", category: "Foreign participant - IEEE student member", earlyBird: "TBA", late: "TBA" },
+    { group: "IEEE Member", category: "Foreign participant - IEEE member", earlyBird: "TBA", late: "TBA" },
+    { group: "Non-IEEE Member", category: "Indian participant - non-IEEE student member", earlyBird: "TBA", late: "TBA" },
+    { group: "Non-IEEE Member", category: "Indian participant - non-IEEE member", earlyBird: "TBA", late: "TBA" },
+    { group: "Non-IEEE Member", category: "Foreign participant - non-IEEE student member", earlyBird: "TBA", late: "TBA" },
+    { group: "Non-IEEE Member", category: "Foreign participant - non-IEEE member", earlyBird: "TBA", late: "TBA" },
   ],
+  registrationGuidelines: {
+    authors: [
+      "At least one author of every accepted paper must register and present the paper for inclusion in the conference proceedings.",
+      "If more than one author of an accepted paper attends the conference, each attendee must register separately.",
+      "Non-refundable registration must be completed before uploading the final formatted paper and related publication forms.",
+    ],
+    attendees: [
+      "All participants must complete registration to attend IRSES 2027.",
+      "IEEE members should provide membership details during registration when using an IEEE category.",
+      "Students should provide a valid student ID during registration when using a student category.",
+      "Applicable taxes, payment gateway charges, and other levies, if any, will be borne by the registrant.",
+    ],
+    noShow:
+      "Accepted papers are expected to be presented at the conference by at least one registered author. Non-presented papers may be excluded from submission to the digital library as per applicable no-show policy.",
+  },
   venueDetails: {
     title: "DAU, Gandhinagar",
     description:
-      "The venue section currently uses the DAU campus entrance image supplied for the project. Travel details, nearby accommodation, campus map, and local transport guidance can be added after confirmation.",
+      "IRSES 2027 will be hosted at Dhirubhai Ambani University, Gandhinagar, formerly known as DAIICT. Travel details, nearby accommodation, campus map, and local transport guidance will be added after confirmation.",
   },
   contact: [
     {
       label: "Conference Email",
-      value: "conference@example.edu",
+      value: "To be announced",
     },
     {
-      label: "Faculty Coordinator",
-      value: "Prof. Name Placeholder",
+      label: "Host Institute",
+      value: "Dhirubhai Ambani University",
     },
     {
-      label: "Institute",
-      value: "Dhirubhai Ambani University, Gandhinagar, Gujarat",
+      label: "Location",
+      value: "Gandhinagar, Gujarat",
     },
   ],
 };
