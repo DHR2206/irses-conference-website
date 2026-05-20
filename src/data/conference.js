@@ -210,7 +210,7 @@ export const conference = {
       title: "Women in Engineering Chairs",
       members: [
         { name: "Prof. Minal Bhise", image: "./assets/faculty/Minal-Bhise.jpg" }
-        //{ name: "Prof. Sangeeta", image: "./assets/faculty/Sangeeta.jpg"}
+        { name: "Prof. Sangeeta", image: "./assets/faculty/Sangeeta.jpg" }
       ]
     }
   ],
