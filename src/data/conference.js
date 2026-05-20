@@ -214,6 +214,149 @@ export const conference = {
       ]
     }
   ],
+
+  import React, { useState } from 'react';
+
+// 1. Paste the data object here, ABOVE your component
+const registrationData = {
+  registrationNote: "",
+  groupedFees: [
+    {
+      tier: "Students",
+      memberships: [
+        {
+          group: "IEEE Member",
+          rates: {
+            INR: { earlyBird: "₹6,000", late: "₹7,000" },
+            USD: { earlyBird: "$200", late: "$300" }
+          }
+        },
+        {
+          group: "IEEE Women Member",
+          rates: {
+            INR: { earlyBird: "₹5,000", late: "₹6,000" },
+            USD: { earlyBird: "$150", late: "$250" }
+          }
+        },
+        {
+          group: "Non-IEEE Member",
+          rates: {
+            INR: { earlyBird: "₹7,000", late: "₹8,500" },
+            USD: { earlyBird: "$250", late: "$400" }
+          }
+        },
+        {
+          group: "Non-IEEE Women Member",
+          rates: {
+            INR: { earlyBird: "₹6,000", late: "₹7,500" },
+            USD: { earlyBird: "$200", late: "$350" }
+          }
+        }
+      ]
+    },
+    {
+      tier: "Regulars",
+      memberships: [
+        {
+          group: "IEEE Member",
+          rates: {
+            INR: { earlyBird: "₹9,000", late: "₹11,000" },
+            USD: { earlyBird: "$300", late: "$400" }
+          }
+        },
+        {
+          group: "IEEE Women Member",
+          rates: {
+            INR: { earlyBird: "₹8,000", late: "₹10,000" },
+            USD: { earlyBird: "$250", late: "$350" }
+          }
+        },
+        {
+          group: "Non-IEEE Member",
+          rates: {
+            INR: { earlyBird: "₹10,000", late: "₹12,000" },
+            USD: { earlyBird: "$350", late: "$500" }
+          }
+        },
+        {
+          group: "Non-IEEE Women Member",
+          rates: {
+            INR: { earlyBird: "₹9,000", late: "₹11,000" },
+            USD: { earlyBird: "$300", late: "$450" }
+          }
+        }
+      ]
+    }
+  ]
+};
+
+// 2. Your main component function starts here
+export default function PricingTable() {
+  const [currency, setCurrency] = useState('INR');
+
+  return (
+    <div className="pricing-container">
+      {/* Header and Toggle Section */}
+      <div className="toggle-header">
+        <p>SHOWING RATES IN <strong>{currency}</strong></p>
+        
+        <div className="toggle-buttons">
+          <button 
+            className={currency === 'INR' ? 'active' : ''} 
+            onClick={() => setCurrency('INR')}
+          >
+            ₹ Indian
+          </button>
+          <button 
+            className={currency === 'USD' ? 'active' : ''} 
+            onClick={() => setCurrency('USD')}
+          >
+            $ Foreign
+          </button>
+        </div>
+      </div>
+
+      {/* The Table */}
+      <table className="pricing-table">
+        <thead>
+          <tr>
+            <th>MEMBERSHIP</th>
+            <th>EARLY BIRD</th>
+            <th>LATE</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          {registrationData.groupedFees.map((tierGroup, index) => (
+            <React.Fragment key={index}>
+              
+              {/* Group Header Row */}
+              <tr className="tier-row">
+                <td colSpan="3">
+                  <em>{tierGroup.tier}</em>
+                </td>
+              </tr>
+
+              {/* Data Rows */}
+              {tierGroup.memberships.map((row, rowIndex) => {
+                const currentRates = row.rates[currency];
+
+                return (
+                  <tr key={rowIndex} className="membership-row">
+                    <td>{row.group}</td>
+                    <td>{currentRates.earlyBird}</td>
+                    <td>{currentRates.late}</td>
+                  </tr>
+                );
+              })}
+            </React.Fragment>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+  /*
   registrationNote: "",
   registrationFees: [
     {
@@ -312,7 +455,7 @@ export const conference = {
       earlyBird: "$300",
       late: "$450",
     },
-  ],
+  ],*/
   /*
   registrationFees: [
     {
