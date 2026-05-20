@@ -131,6 +131,7 @@ export const conference = {
       members: [
         { name: "Prof. Bhaskar Chaudhary", image: "./assets/faculty/bhaskar-chaudhary.jpg" },
         { name: "Prof. Yash Vasawada", image: "./assets/faculty/yash-vasawada.jpg" },
+        { name: "Prof. Maniklal das", image: "./assets/faculty/maniklal-das.jpg" },
       ],
     },
     {
@@ -138,6 +139,7 @@ export const conference = {
       members: [
         { name: "Prof. Pankaj Kumar", image: "./assets/faculty/pankaj-kumar.jpg" },
         { name: "Prof. Yash Agarwal", image: "./assets/faculty/yash-agarwal.jpg" },
+        { name: "Prof. Chirag Paunwala ", image: "./assets/faculty/chirag-paunwala.jpg" },
       ],
     },
     {
@@ -146,6 +148,7 @@ export const conference = {
         { name: "Prof. Sanjay Srivastava", image: "./assets/faculty/sanjay-srivastava.jpg" },
         { name: "Prof. Anish Mathuria", image: "./assets/faculty/anish-mathuria.jpg" },
         { name: "Prof. Biswajit Mishra", image: "./assets/faculty/biswajit-mishra.jpg" },
+        { name: "Prof. Amit Ved", image: "./assets/faculty/Amit-Ved.jpg" },
       ],
     },
     {
@@ -154,12 +157,16 @@ export const conference = {
         { name: "Prof. Manish Kumar", image: "./assets/faculty/manish-kumar.jpg" },
         { name: "Prof. Pritam Anand", image: "./assets/faculty/pritam-anand.jpg" },
         { name: "Prof. Arpit Rana", image: "./assets/faculty/arpit-rana.jpg" },
+        { name: "Prof. Kalyan Sasidhar", image: "./assets/faculty/Kalyan-Sasidhar.jpg" },
       ],
     },
     {
       title: "Finance Chair",
       members: [
         { name: "Prof. Mukesh Tiwari", image: "./assets/faculty/mukesh-tiwari.jpg" },
+        { name: "Prof. Sunitha V.", image: "./assets/faculty/Sunitha-V.jpg" },
+        { name: "Prof. Saurabh Tiwari", image: "./assets/faculty/Saurabh-Tiwari.jpg" },
+
       ],
     },
     {
@@ -172,14 +179,15 @@ export const conference = {
     {
       title: "PhD Colloquium Chair",
       members: [
-        { name: "Prof. Sangeeta Singh" },
+        { name: "Prof. Sreeja Rajendran", image: "./assets/faculty/sreeja-rajendran.jpg" },
         { name: "Prof. Rutu Parekh", image: "./assets/faculty/rutu-parekh.jpg" },
       ],
     },
     {
       title: "Student Innovation Chair",
       members: [
-        { name: "Prof. Koushlendra Singh" },
+        { name: "Prof. Koushlendra Singh", image: "./assets/faculty/koushlendra-singh.jpg" },
+        { name: "Prof. Tapas kumar maiti", image: "./assets/faculty/Tapas-kumar-maiti.jpg" },
       ],
     },
     {
@@ -188,6 +196,7 @@ export const conference = {
         { name: "Dr. Prasenjit Kundu", image: "./assets/faculty/prasenjit-kundu.jpg" },
         { name: "Prof. Ankit Vijayvargiya", image: "./assets/faculty/ankit-vijayvargiya.jpg" },
         { name: "Prof. Madhukant Sharma", image: "./assets/faculty/madhukant-sharma.jpg" },
+        { name: " Prof. Amit Mankodi", image: "./assets/faculty/amit-mankodi.jpg" },
       ],
     },
     {
@@ -197,6 +206,13 @@ export const conference = {
         { name: "Prof. Ajay Beniwal", image: "./assets/faculty/ajay-beniwal.jpg" },
       ],
     },
+    {
+      title: "Women in Engineering Chairs",
+      members: [
+        { name: "Prof. Minal Bhise", image: "./assets/faculty/Minal-Bhise.jpg" }
+        //{ name: "Prof. Sangeeta", image: "./assets/faculty/Sangeeta.jpg"}
+      ]
+    }
   ],
   registrationNote: "",
   registrationFees: [
