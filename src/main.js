@@ -280,9 +280,13 @@ contact.innerHTML = conference.contact
 
     return `
       <article class="contact-card">
-        <div class="contact-card-icon" aria-hidden="true">${icon}</div>
-        <span>${item.label}</span>
-        ${valueHtml}
+        <div class="contact-card-top">
+          <div class="contact-card-icon" aria-hidden="true">${icon}</div>
+          <span>${item.label}</span>
+        </div>
+        <div class="contact-card-value">
+          ${valueHtml}
+        </div>
       </article>
     `;
   })
