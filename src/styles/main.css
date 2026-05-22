@@ -957,7 +957,7 @@ img { display: block; max-width: 100%; }
 }
 
 .committee-card h3 {
-  margin: 0 0 4px;
+  margin: 0 0 18px;
   font-family: "Sora", "Inter", sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
@@ -995,8 +995,8 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: 52px minmax(0, 1fr);
   gap: 12px;
-  align-items: center;
-  min-height: 56px;
+  align-items: start;
+  min-height: 64px;
 }
 
 .member-photo {
@@ -1026,37 +1026,47 @@ img { display: block; max-width: 100%; }
 
 .member-initials { font-size: 0.88rem; color: var(--navy); }
 
-/* Member name + info link */
+/* Member details */
 .member-info {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  min-width: 0;
 }
 
 .committee-member .member-name {
   color: var(--ink);
   font-weight: 800;
   font-size: 0.92rem;
-  line-height: 1.3;
+  line-height: 1.25;
+}
+
+.member-institute {
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .member-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(0,141,149,0.10);
   color: var(--teal);
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 900;
-  transition: background 160ms ease, transform 160ms ease;
-  flex-shrink: 0;
+  line-height: 1.25;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
 }
 
-.member-link:hover { background: var(--teal); color: #fff; transform: scale(1.15); }
+.member-link:hover {
+  color: var(--green);
+  text-decoration-color: currentColor;
+}
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Registration

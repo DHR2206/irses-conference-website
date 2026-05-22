@@ -92,14 +92,19 @@ const memberMarkup = (member) => {
     : `<span class="member-initials" aria-hidden="true">${initials(person.name)}</span>`;
 
   const infoLink = person.infoLink
-    ? `<a class="member-link" href="${person.infoLink}" target="_blank" rel="noopener" aria-label="View ${person.name}'s profile" title="View profile">↗</a>`
+    ? `<a class="member-link" href="${person.infoLink}" target="_blank" rel="noopener" aria-label="View ${person.name}'s profile">More info</a>`
+    : "";
+  const institute = person.institute
+    ? `<span class="member-institute">${person.institute}</span>`
     : "";
 
   return `
     <li class="committee-member">
       <div class="member-photo">${media}</div>
       <div class="member-info">
-        <span class="member-name">${person.name}</span>${infoLink}
+        <span class="member-name">${person.name}</span>
+        ${institute}
+        ${infoLink}
       </div>
     </li>
   `;
@@ -111,7 +116,6 @@ committees.innerHTML = conference.committees
     (group) => `
     <article class="committee-card">
       <h3>${group.title}</h3>
-      <span class="role-badge">Committee</span>
       <ul class="committee-members">
         ${group.members.map(memberMarkup).join("")}
       </ul>
