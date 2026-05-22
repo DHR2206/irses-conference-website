@@ -225,7 +225,7 @@ export const conference = {
          {
           name: "Naran M. Pindoriya",
           institute: "IIT Gandhinagar",
-          image: "./assets/faculty/Naram-M-Pindoriya.jpg",
+          image: "./assets/faculty/Naran-M-Pindoriya.jpg",
           infoLink: "https://iitgn.ac.in/faculty/ee/fac-naran",
           //bio: "Electrical engineering academic at Marwadi University and IEEE Gujarat Section volunteer with interests in power systems, electrical machines, and engineering education.",
         },
