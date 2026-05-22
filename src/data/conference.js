@@ -120,7 +120,7 @@ export const conference = {
       members: [
         {
           name: "Tathagata Bandyopadhyay",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/tathagata-bandyopadhyay.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/tathagata-bandyopadhyay",
           bio: "Director General of Dhirubhai Ambani University with expertise in statistics, academic leadership, and higher education administration.",
@@ -132,7 +132,7 @@ export const conference = {
       members: [
         {
           name: "G. Venkatesh",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/g-venkatesh.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/g-venkatesh",
           bio: "Director of the School of Technology at Dhirubhai Ambani University with extensive academic, industry, and technology leadership experience.",
@@ -144,21 +144,21 @@ export const conference = {
       members: [
         {
           name: "Bhaskar Chaudhary",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/bhaskar-chaudhary.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/bhaskar-chaudhury",
           bio: "Professor at Dhirubhai Ambani University working in computational plasma physics, computational data science, high-performance computing, and AI/ML applications.",
         },
         {
           name: "Yash Vasawada",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/yash-vasawada.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/yash-vasavada",
           bio: "Professor at Dhirubhai Ambani University with research interests in communication systems, signal processing, and machine learning.",
         },
         {
           name: "Manik Lal Das",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/maniklal-das.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/maniklal-das",
           bio: "Professor at Dhirubhai Ambani University specializing in cyber security, privacy, cryptography, security protocols, and algorithms.",
@@ -170,14 +170,14 @@ export const conference = {
       members: [
         {
           name: "Pankaj Kumar",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/pankaj-kumar.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/pankaj-kumar",
           bio: "Faculty member at Dhirubhai Ambani University working in RF and microwave engineering, metamaterials, terahertz devices, and VLSI design.",
         },
         {
           name: "Yash Agarwal",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/yash-agarwal.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/yash-agrawal",
           bio: "Faculty member at Dhirubhai Ambani University with research interests in VLSI, nanotechnology, advanced device modeling, and high-speed interconnects.",
@@ -196,21 +196,21 @@ export const conference = {
       members: [
         {
           name: "Sanjay Srivastava",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/sanjay-srivastava.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/sanjay-srivastava",
           bio: "Professor at Dhirubhai Ambani University with research interests in internet of things, protocol modeling and analysis, and simulation.",
         },
         {
           name: "Anish Mathuria",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/anish-mathuria.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/anish-mathuria",
           bio: "Professor at Dhirubhai Ambani University specializing in network security, privacy-preserving computation, system security, and cryptography.",
         },
         {
           name: "Biswajit Mishra",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/biswajit-mishra.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/biswajit-mishra",
           bio: "Faculty member at Dhirubhai Ambani University working in ultra-low-power circuits, VLSI design, power management, and energy-harvesting systems.",
@@ -243,7 +243,7 @@ export const conference = {
         },
         {
           name: "Manish Kumar",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/manish-kumar.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/manish-kumar",
           bio: "Faculty member at Dhirubhai Ambani University working in UAV networks, sensor and ad-hoc networks, wireless-powered IoT, and 5G/6G systems.",
@@ -255,14 +255,14 @@ export const conference = {
       members: [
         {
           name: "Mukesh Tiwari",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/mukesh-tiwari.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/mukesh-tiwari",
           bio: "Faculty member at Dhirubhai Ambani University with research interests in nonequilibrium statistical mechanics and nonlinear dynamics.",
         },
         {
           name: "Sunita V",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/Sunitha-V.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/sunitha-v",
           bio: "Faculty member at Dhirubhai Ambani University specializing in graph theory, parallel and distributed algorithms, dynamic algorithms, and graph applications.",
@@ -281,14 +281,14 @@ export const conference = {
       members: [
         {
           name: "Sujay Kadam",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/sujay-kadam.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/sujay-kadam",
           bio: "Faculty member at Dhirubhai Ambani University with interests in instrumentation, systems and control theory, human-motor learning, and robotics.",
         },
         {
           name: "Anupam Rana",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/anupam-rana.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/anupam-rana",
           bio: "Faculty member at Dhirubhai Ambani University working in design education, experience design, UI/UX, design thinking, and multidisciplinary research.",
@@ -300,7 +300,7 @@ export const conference = {
       members: [
         {
           name: "Rutu Parekh",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/rutu-parekh.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/rutu-parekh",
           bio: "Faculty member at Dhirubhai Ambani University specializing in high-voltage ASIC design, nanoelectronics, embedded systems, IoT, and emerging devices.",
@@ -319,7 +319,7 @@ export const conference = {
         },
         {
           name: "Tapas Kumar Maiti",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/Tapas-kumar-maiti.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/tapas-kumar-maiti",
           bio: "Faculty member at Dhirubhai Ambani University working in intelligent devices and systems, robotics, AI-chip design, and cybernetics.",
@@ -331,14 +331,14 @@ export const conference = {
       members: [
         {
           name: "Ankit Vijayvargiya",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/ankit-vijayvargiya.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/ankit-vijayvargiya",
           bio: "Faculty member at Dhirubhai Ambani University with research interests in biomedical signals, machine learning, neural rehabilitation, and gait analysis.",
         },
         {
           name: "Amit Mankodi",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/amit-mankodi.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/amit-mankodi",
           bio: "Professor at Dhirubhai Ambani University specializing in embedded systems, computer networks, high-performance computing, and machine learning.",
@@ -350,14 +350,14 @@ export const conference = {
       members: [
         {
           name: "Abhishek Jindal",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/abhishek-jindal.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/abhishek-jindal",
           bio: "Associate Professor at Dhirubhai Ambani University with research interests in reinforcement learning, deep learning, wireless communication, and cyber-physical systems.",
         },
         {
           name: "Ajay Beniwal",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/ajay-beniwal.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/ajay-beniwal",
           bio: "Assistant Professor at Dhirubhai Ambani University working in flexible and printable electronics, smart sensing, sensor materials, and sustainable electronics.",
@@ -369,7 +369,7 @@ export const conference = {
       members: [
         {
           name: "Minal Bhise",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/Minal-Bhise.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/minal-bhise",
           bio: "Faculty member at Dhirubhai Ambani University specializing in distributed databases, query processing, biodiversity-domain applications, and software systems.",
@@ -388,14 +388,14 @@ export const conference = {
       members: [
         {
           name: "Pritam Anand",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/pritam-anand.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/pritam-anand",
           bio: "Faculty member at Dhirubhai Ambani University with research interests in support vector machines, loss functions, regression, and extreme learning machines.",
         },
         {
           name: "Arpit Rana",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/arpit-rana.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/arpit-rana",
           bio: "Faculty member at Dhirubhai Ambani University specializing in applied machine learning, recommender systems, multimodality, and digital innovation.",
@@ -407,14 +407,14 @@ export const conference = {
       members: [
         {
           name: "Madhukant Sharma",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/madhukant-sharma.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/madhu-kant-sharma",
           bio: "Faculty member at Dhirubhai Ambani University working in fractional differential equations, optimization, numerical methods, and signal processing.",
         },
         {
           name: "Pushpendra Kumar",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/pushpendra-kumar.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/pushpendra-kumar",
           bio: "Faculty member at Dhirubhai Ambani University with research interests in fractional calculus, mathematical modeling, numerical analysis, and neural networks.",
@@ -426,7 +426,7 @@ export const conference = {
       members: [
         {
           name: "Prasenjit Kundu",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/prasenjit-kundu.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/prosenjit-kundu",
           bio: "Faculty member at Dhirubhai Ambani University working in applied mathematics, complex networks, dynamical systems, and mathematical sciences.",
@@ -438,14 +438,14 @@ export const conference = {
       members: [
         {
           name: "Purbasha Das",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/purbasha-das.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/purbasha-das",
           bio: "Faculty member at Dhirubhai Ambani University with research interests in history of transport and communication, urban history, and legal and social history.",
         },
         {
           name: "Sreeja Rajendran",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/sreeja-rajendran.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/sreeja-rajendran",
           bio: "Faculty member at Dhirubhai Ambani University specializing in VLSI, embedded systems and MEMS, hardware security, and VLSI testing.",
@@ -457,7 +457,7 @@ export const conference = {
       members: [
         {
           name: "Kalyan Sasidhar",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/Kalyan-Sasidhar.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/p-s-kalyan-sasidhar",
           bio: "Faculty member at Dhirubhai Ambani University with research interests in mobile and pervasive computing, wireless sensor networks, and mobile phone sensing.",
@@ -469,7 +469,7 @@ export const conference = {
       members: [
         {
           name: "Saurabh Tiwari",
-          institute: "Dhirubhai Ambani University, Gandhinagar",
+          institute: "Dhirubhai Ambani University ",
           image: "./assets/faculty/Saurabh-Tiwari.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/saurabh-tiwari",
           bio: "Faculty member at Dhirubhai Ambani University specializing in software engineering, mining software repositories, natural language processing, and HCI.",

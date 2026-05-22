@@ -35,7 +35,6 @@ text("[data-event-venue]", conference.venue);
 text("[data-event-host]", conference.host);
 text("[data-event-description]", conference.description);
 text("[data-event-purpose]", conference.purpose);
-text("[data-registration-note]", conference.registrationNote);
 text("[data-venue-title]", conference.venueDetails.title);
 text("[data-venue-description]", conference.venueDetails.description);
 text("[data-footer-copy]", conference.footer);
@@ -126,18 +125,128 @@ committees.innerHTML = conference.committees
 
 /* ─── Registration fees ────────────────────────────────────────────────────── */
 const fees = document.querySelector("[data-registration-fees]");
-fees.innerHTML = conference.registrationFees
-  .map(
-    (fee) => `
-    <tr>
-      <td>${fee.group}</td>
-      <td>${fee.category}</td>
-      <td>${fee.earlyBird}</td>
-      <td>${fee.late}</td>
-    </tr>
-  `,
-  )
-  .join("");
+const pricingCard = document.querySelector("[data-registration-pricing]");
+const audienceLabel = document.querySelector("[data-registration-audience]");
+const currencyButtons = document.querySelectorAll("[data-currency-toggle]");
+
+const participantTypes = {
+  inr: {
+    label: "Indian Participant Fees",
+    matcher: "indian participant",
+  },
+  usd: {
+    label: "Foreign Participant Fees",
+    matcher: "foreign participant",
+  },
+};
+
+const feeGroups = [
+  {
+    title: "Students",
+    description: "Reduced conference registration for enrolled students.",
+    isMatch: (category) => category.includes("student"),
+  },
+  {
+    title: "Regulars",
+    description: "Full conference registration for regular delegates.",
+    isMatch: (category) => !category.includes("student"),
+  },
+];
+
+const membershipOrder = [
+  "IEEE Member",
+  "IEEE Women Member",
+  "Non-IEEE Member",
+  "Non-IEEE Women Member",
+];
+
+let selectedCurrency = "inr";
+
+const getRegistrationFee = (currency, group, membership) => {
+  const participant = participantTypes[currency].matcher;
+
+  return conference.registrationFees.find((fee) => {
+    const category = fee.category.toLowerCase();
+    return (
+      fee.group === membership &&
+      category.includes(participant) &&
+      group.isMatch(category)
+    );
+  });
+};
+
+const renderRegistrationFees = () => {
+  if (!fees) return;
+
+  audienceLabel.textContent = participantTypes[selectedCurrency].label;
+  pricingCard.dataset.currency = selectedCurrency;
+
+  fees.innerHTML = feeGroups
+    .map((group, groupIndex) => {
+      const rows = membershipOrder
+        .map((membership) => {
+          const fee = getRegistrationFee(selectedCurrency, group, membership);
+          if (!fee) return "";
+
+          return `
+            <div class="pricing-row" role="row">
+              <div class="pricing-membership" role="cell">${membership}</div>
+              <div class="pricing-price" role="cell" data-label="Early Bird">
+                <span>Early Bird</span>
+                <strong>${fee.earlyBird}</strong>
+              </div>
+              <div class="pricing-price" role="cell" data-label="Late">
+                <span>Late</span>
+                <strong>${fee.late}</strong>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
+
+      return `
+        <section class="pricing-group" role="rowgroup" aria-labelledby="fee-group-${groupIndex}">
+          <div class="pricing-group-heading">
+            <span aria-hidden="true">${String(groupIndex + 1).padStart(2, "0")}</span>
+            <div>
+              <h4 id="fee-group-${groupIndex}">${group.title}</h4>
+              <p>${group.description}</p>
+            </div>
+          </div>
+          <div class="pricing-row pricing-row-head" role="row">
+            <div role="columnheader">Membership</div>
+            <div role="columnheader">Early Bird</div>
+            <div role="columnheader">Late</div>
+          </div>
+          ${rows}
+        </section>
+      `;
+    })
+    .join("");
+};
+
+currencyButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const nextCurrency = button.dataset.currencyToggle;
+    if (!nextCurrency || nextCurrency === selectedCurrency) return;
+
+    selectedCurrency = nextCurrency;
+    currencyButtons.forEach((item) => {
+      item.setAttribute(
+        "aria-pressed",
+        String(item.dataset.currencyToggle === selectedCurrency),
+      );
+    });
+
+    pricingCard.classList.add("is-switching");
+    window.setTimeout(() => {
+      renderRegistrationFees();
+      pricingCard.classList.remove("is-switching");
+    }, 120);
+  });
+});
+
+renderRegistrationFees();
 
 const authorNotes = document.querySelector("[data-author-notes]");
 authorNotes.innerHTML = conference.registrationGuidelines.authors
