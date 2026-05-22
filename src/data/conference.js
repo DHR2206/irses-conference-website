@@ -118,7 +118,14 @@ export const conference = {
   {
     title: "Chief Patron",
     members: [
-      { name: "Tathagata Bandyopadhyay", image: "./assets/faculty/tathagata-bandyopadhyay.jpg" },
+      //{ name: "Tathagata Bandyopadhyay", image: "./assets/faculty/tathagata-bandyopadhyay.jpg" },
+      {
+        name: "Tathagata Bandyopadhyay",
+        institute: "Dhirubhai Ambani University, Gandhinagar",
+        image: "./assets/faculty/tathagata-bandyopadhyay.jpg",
+        infoLink: "https://daiict.ac.in",
+        bio: "Director General at Dhirubhai Ambani University with expertise in academic leadership, statistics, and higher education administration."
+       }
     ],
   },
   {
