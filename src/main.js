@@ -125,6 +125,84 @@ committees.innerHTML = conference.committees
   )
   .join("");
 
+/* ─── Sponsorship ─────────────────────────────────────────────────────────── */
+const sponsorshipSummary = document.querySelector("[data-sponsorship-summary]");
+if (sponsorshipSummary) {
+  sponsorshipSummary.textContent = conference.sponsorship.intro[0];
+}
+
+const sponsorshipIntro = document.querySelector("[data-sponsorship-intro]");
+if (sponsorshipIntro) {
+  sponsorshipIntro.innerHTML = conference.sponsorship.intro
+    .slice(1)
+    .map((paragraph) => `<p>${paragraph}</p>`)
+    .join("");
+}
+
+const sponsorshipPackages = document.querySelector("[data-sponsorship-packages]");
+if (sponsorshipPackages) {
+  sponsorshipPackages.innerHTML = `
+    <div class="package-row package-head" role="row">
+      <div role="columnheader">Sponsorship grade</div>
+      <div role="columnheader">Amount of contribution</div>
+    </div>
+    ${conference.sponsorship.packages
+      .map(
+        (item) => `
+        <div class="package-row" role="row">
+          <div role="cell">${item.grade}</div>
+          <strong role="cell">${item.amount}</strong>
+        </div>
+      `,
+      )
+      .join("")}
+  `;
+}
+
+text("[data-sponsorship-tax-note]", conference.sponsorship.taxNote);
+
+const sponsorshipBenefits = document.querySelector("[data-sponsorship-benefits]");
+if (sponsorshipBenefits) {
+  sponsorshipBenefits.innerHTML = conference.sponsorship.benefits
+    .map(
+      (benefit) => `
+      <article class="benefit-card">
+        <div class="benefit-card-top">
+          <h3>${benefit.title}</h3>
+          <span>${benefit.amount}</span>
+        </div>
+        <ul>
+          ${benefit.details.map((item) => `<li>${item}</li>`).join("")}
+        </ul>
+      </article>
+    `,
+    )
+    .join("");
+}
+
+const sponsorshipContact = document.querySelector("[data-sponsorship-contact]");
+if (sponsorshipContact) {
+  sponsorshipContact.innerHTML = `<strong>${conference.sponsorship.contact}</strong>`;
+}
+
+/* ─── Fellowship ──────────────────────────────────────────────────────────── */
+text(
+  "[data-travel-grants-description]",
+  conference.fellowship.travelGrants.description,
+);
+text(
+  "[data-travel-grants-instruction]",
+  conference.fellowship.travelGrants.instruction,
+);
+text("[data-awards-description]", conference.fellowship.awards);
+
+const travelGrantFields = document.querySelector("[data-travel-grant-fields]");
+if (travelGrantFields) {
+  travelGrantFields.innerHTML = conference.fellowship.travelGrants.fields
+    .map((field) => `<li>${field}</li>`)
+    .join("");
+}
+
 /* ─── Registration fees ────────────────────────────────────────────────────── */
 const fees = document.querySelector("[data-registration-fees]");
 const pricingCard = document.querySelector("[data-registration-pricing]");

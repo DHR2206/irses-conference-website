@@ -750,6 +750,96 @@ export const conference = {
     noShow:
       "Accepted papers are expected to be presented at the conference by at least one registered author. Non-presented papers may be excluded from submission to the digital library as per applicable no-show policy.",
   },
+  sponsorship: {
+    intro: [
+      "IRSES 2027 offers sponsors and exhibitors a focused opportunity to present services, technologies, and solutions to a research-driven audience working across intelligent, resilient, and sustainable energy systems.",
+      "Sponsors can use the conference platform to connect with potential collaborators, customers, researchers, students, and industry professionals. Sponsorship packages include defined promotional privileges during the conference.",
+      "A limited number of exhibitor spaces will be available and allocated on a first-come, first-served basis. Interested organizations are encouraged to confirm participation early.",
+    ],
+    packages: [
+      { grade: "Title Sponsors", amount: "INR 10,00,000" },
+      { grade: "Platinum Sponsors", amount: "INR 5,00,000" },
+      { grade: "Gold Sponsors", amount: "INR 3,00,000" },
+      { grade: "Silver Sponsors", amount: "INR 2,00,000" },
+      { grade: "Academic Partners", amount: "INR 2,00,000" },
+      { grade: "Exhibitors", amount: "INR 50,000" },
+    ],
+    taxNote: "Amounts exclude GST at 18%.",
+    benefits: [
+      {
+        title: "Title Sponsors",
+        amount: "Rs. 10,00,000/- + GST (18%)",
+        details: [
+          "Special mention as Presented by, inclusion in PR activities, inaugural ceremony presence, a 10-minute presentation slot, social media mentions, main-stage panel visibility, and podium acknowledgement.",
+          "Sponsor name and logo will appear in conference announcement materials and documents, including banners, posters, and proceedings. Please provide a high-resolution JPG logo at the time of contract.",
+          "Space up to 5m x 5m will be provided at a strategic location in the venue to showcase products. Ten complimentary registrations will be provided.",
+        ],
+      },
+      {
+        title: "Platinum Sponsors",
+        amount: "Rs. 5,00,000/- + GST (18%)",
+        details: [
+          "Main-stage panel visibility, podium acknowledgement, inaugural ceremony presence, gala dinner invite, social media mentions, and inclusion in PR activity.",
+          "Sponsor name and logo will appear in conference announcement materials and documents, including banners, posters, and proceedings. Please provide a high-resolution JPG logo at the time of contract.",
+          "Space up to 4m x 4m will be provided at a strategic venue location to showcase products. Sponsors will be acknowledged during the inaugural welcome or closing event. Five complimentary registrations will be provided.",
+        ],
+      },
+      {
+        title: "Gold Sponsors",
+        amount: "Rs. 3,00,000/- + GST (18%)",
+        details: [
+          "Sponsor name and logo will appear in conference announcement materials, including banners and posters.",
+          "Space up to 4m x 4m will be provided at the exhibition venue to showcase products. Sponsors will be acknowledged during the inaugural welcome or closing event.",
+          "Three complimentary registrations will be provided.",
+        ],
+      },
+      {
+        title: "Silver Sponsors",
+        amount: "Rs. 2,00,000/- + GST (18%)",
+        details: [
+          "Sponsor name will be displayed in the event banner of the conference.",
+          "Space up to 3m x 3m will be provided at the exhibition venue to showcase products.",
+          "Two complimentary registrations will be provided.",
+        ],
+      },
+      {
+        title: "Academic Partners",
+        amount: "Rs. 2,00,000/- + GST (18%)",
+        details: [
+          "This option is open to academic institutions, colleges, and universities where IEEE Student Branches exist.",
+          "Partner name will be displayed in the event banner, and space up to 3m x 3m will be provided at the exhibition venue to showcase activities and innovations.",
+          "Two complimentary registrations will be provided.",
+        ],
+      },
+      {
+        title: "Exhibitors",
+        amount: "Rs. 50,000/- + GST (18%)",
+        details: [
+          "Exhibitors will be provided space at the exhibition venue to showcase activities and innovations.",
+          "One complimentary registration will be provided.",
+        ],
+      },
+    ],
+    contact: "To secure participation, please write to us at ieee_irses@dau.ac.in.",
+  },
+  fellowship: {
+    travelGrants: {
+      description:
+        "IRSES 2027 is pleased to offer financial support to selected IEEE student members who are first authors and will present their accepted research work during the conference. Grants will be awarded to a limited number of applicants on a competitive basis and may support registration fees or partial travel expenses. Final decisions will be made by the Conference Fellowship Committee.",
+      instruction:
+        "Interested IEEE student members who are first authors can email the conference after paper acceptance with the following details:",
+      fields: [
+        "Paper ID",
+        "Paper Title",
+        "Authors Names and Affiliations (with country name)",
+        "Abstract",
+        "Email",
+        "Contact Number",
+      ],
+    },
+    awards:
+      "Best Paper and Poster Awards will be presented for work representing outstanding research. Track chairs will nominate top papers, and the committee will review each nomination, reviewer comments, and nomination statements before selecting awardees.",
+  },
   venueDetails: {
     title: "DAU, Gandhinagar",
     description:
@@ -758,6 +848,7 @@ export const conference = {
   contact: [
     {
       label: "Organising Secretary",
+      image: "./assets/faculty/Dr-Umang-Patel.jpg",
       value: "Dr. Umang Patel",
     },
     {

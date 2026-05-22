@@ -185,12 +185,12 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  min-width: 190px;
+  min-width: 158px;
   flex-shrink: 0;
 }
 
 .brand-logo {
-  width: 72px;
+  width: 66px;
   height: 48px;
   object-fit: contain;
   border: 1px solid rgba(255,255,255,0.36);
@@ -230,7 +230,7 @@ img { display: block; max-width: 100%; }
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 999px;
   background: rgba(255,255,255,0.065);
-  font-size: 0.86rem;
+  font-size: clamp(0.76rem, 0.78vw, 0.86rem);
   font-weight: 800;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -253,7 +253,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  padding: 8px clamp(10px, 1vw, 15px);
+  padding: 8px clamp(8px, 0.8vw, 14px);
   opacity: 0.86;
   transition: opacity 160ms ease, transform 160ms ease, background 160ms ease, color 160ms ease;
 }
@@ -747,6 +747,7 @@ img { display: block; max-width: 100%; }
 /* Quick links sidebar */
 .quick-links {
   display: grid;
+  align-self: start;
   border: 1px solid var(--line);
   background: var(--surface);
   border-radius: var(--radius-lg);
@@ -795,6 +796,200 @@ img { display: block; max-width: 100%; }
 
 .quick-links a.nav-cta::after { color: rgba(255,255,255,0.7); }
 .quick-links a.nav-cta:hover { background: var(--green-light); padding-left: 26px; }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Sponsorship
+───────────────────────────────────────────────────────────────────────────── */
+.sponsorship-section { overflow: hidden; }
+
+.sponsorship-intro {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: -12px;
+  margin-bottom: 28px;
+}
+
+.sponsorship-intro p {
+  margin: 0;
+  border-left: 3px solid var(--teal);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  color: var(--ink-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+.sponsorship-packages {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.package-table {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.package-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.38fr);
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.package-row:last-child { border-bottom: 0; }
+
+.package-head {
+  background: linear-gradient(90deg, rgba(15,107,89,0.09), rgba(213,155,47,0.09));
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.package-row:not(.package-head) div { font-weight: 850; }
+
+.package-row strong {
+  color: var(--green);
+  font-family: "Sora", "Inter", sans-serif;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.package-note {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-weight: 750;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 100%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+.benefit-card-top {
+  display: grid;
+  gap: 8px;
+}
+
+.benefit-card h3,
+.fellowship-panel h3 {
+  margin: 0;
+  font-family: "Sora", "Inter", sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.24;
+}
+
+.benefit-card-top span {
+  color: var(--gold);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.benefit-card ul,
+.field-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefit-card li,
+.field-list li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.52;
+}
+
+.benefit-card li::before,
+.field-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.sponsorship-contact {
+  margin-top: 26px;
+  border: 1px solid rgba(15,107,89,0.22);
+  background: linear-gradient(135deg, rgba(15,107,89,0.10), rgba(0,141,149,0.08));
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  color: var(--ink);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Fellowship
+───────────────────────────────────────────────────────────────────────────── */
+.fellowship-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.fellowship-panel {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: clamp(22px, 3vw, 32px);
+  box-shadow: var(--shadow-soft);
+}
+
+.fellowship-panel p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.fellowship-panel > p:first-child {
+  color: var(--ink);
+  font-size: 1.06rem;
+  line-height: 1.64;
+}
+
+.fellowship-panel h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.accent-panel {
+  background:
+    linear-gradient(150deg, rgba(16,28,47,0.96), rgba(15,107,89,0.90)),
+    var(--navy);
+  color: #fff;
+}
+
+.accent-panel .eyebrow { color: #ffd58a; }
+.accent-panel h3 { color: #fff; }
+.accent-panel p { color: rgba(255,255,255,0.80); }
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Important Dates — Vertical Timeline
@@ -1963,7 +2158,7 @@ img { display: block; max-width: 100%; }
     background: rgba(20,31,46,0.95);
   }
 
-  .site-nav.is-open { max-height: 460px; opacity: 1; }
+  .site-nav.is-open { max-height: 560px; opacity: 1; }
 
   .site-nav a {
     min-height: 44px;
@@ -1994,9 +2189,15 @@ img { display: block; max-width: 100%; }
   .section-heading.wide,
   .track-layout,
   .intro-grid,
+  .sponsorship-intro,
+  .fellowship-grid,
   .venue-section,
   .registration-guidelines {
     grid-template-columns: 1fr;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .track-intro {
@@ -2135,8 +2336,18 @@ img { display: block; max-width: 100%; }
 
   .track-grid,
   .committee-layout,
+  .benefit-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .package-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .package-row strong {
+    text-align: left;
   }
 
   .contact-section .section-heading {
