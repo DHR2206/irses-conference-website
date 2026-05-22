@@ -21,10 +21,10 @@ export const conference = {
       name: "IEEE Gujarat Section",
       src: "./assets/ieee-gujarat-section.png",
     },
-    {
+    /*{
       name: "Smart Energy Learning Center",
       src: "./assets/smart-energy-learning-center.jpg",
-    },
+    },*/
   ],
   importantDates: [
     {
