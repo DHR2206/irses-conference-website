@@ -520,7 +520,7 @@ const navItems = [
 ];
 
 let activeSection = "";
-let activeSection = "";
+
 
 const sections = navItems
   .map((id) => document.getElementById(id))
