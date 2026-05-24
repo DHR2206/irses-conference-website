@@ -522,11 +522,37 @@ const navItems = [
 let activeSection = "";
 const sections = navItems.map(id => document.getElementById(id)).filter(Boolean);
 const navLinks = document.querySelectorAll(".site-nav a[href^='#']");
-
+/*
 const setActiveSection = (id) => {
   if (activeSection === id) return;
   activeSection = id;
   
+  navLinks.forEach((link) => {
+    link.classList.toggle(
+      "is-active",
+      link.getAttribute("href") === `#${id}`
+    );
+  });
+};*/
+
+const setActiveSection = (id) => {
+  if (id === "authors") {
+    const authorsSection = document.getElementById("authors");
+
+    if (authorsSection) {
+      const rect = authorsSection.getBoundingClientRect();
+
+      // activate earlier
+      if (rect.top > window.innerHeight * 0.45) {
+        return;
+      }
+    }
+  }
+
+  if (activeSection === id) return;
+
+  activeSection = id;
+
   navLinks.forEach((link) => {
     link.classList.toggle(
       "is-active",
