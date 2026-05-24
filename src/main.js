@@ -561,6 +561,31 @@ const setActiveSection = (id) => {
   });
 };
 
+const updateActiveSection = () => {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if (
+      window.scrollY >= sectionTop - 140 &&
+      window.scrollY < sectionTop + sectionHeight - 140
+    ) {
+      currentSection = section.id;
+    }
+  });
+
+  if (currentSection) {
+    setActiveSection(currentSection);
+  }
+};
+
+window.addEventListener("scroll", updateActiveSection);
+
+updateActiveSection();
+
+/*
 const navObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -570,7 +595,7 @@ const navObserver = new IntersectionObserver(
     });
   },
   { threshold: 0.1, rootMargin: "-120px 0px -55% 0px" }
-);
+);*/
 
 sections.forEach((section) => navObserver.observe(section));
 
