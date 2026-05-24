@@ -543,7 +543,7 @@ const navObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.25, rootMargin: "-80px 0px -40% 0px" }
+  { threshold: 0.1, rootMargin: "-120px 0px -55% 0px" }
 );
 
 sections.forEach((section) => navObserver.observe(section));
