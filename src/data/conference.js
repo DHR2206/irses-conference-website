@@ -329,7 +329,7 @@ export const conference = {
         {
           name: "Pankaj Kumar",
           institute: "Dhirubhai Ambani University ",
-          image: "./assets/faculty/pankaj-kumar.jpg",
+          image: "./assets/faculty/pankaj_kumar.jpg",
           infoLink: "https://www.daiict.ac.in/faculty/pankaj-kumar",
           bio: "Faculty member at Dhirubhai Ambani University working in RF and microwave engineering, metamaterials, terahertz devices, and VLSI design.",
         },
